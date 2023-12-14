@@ -19,25 +19,32 @@ export default function Home() {
     }
   }, [magicWriter]);
 
-return (
-  <main className="flex flex-col items-center justify-center p-2">
-    <div className="flex flex-col min-h-screen items-center justify-center relative ">
-      <p className="text-8xl font-bold text-center text-red-400 absolute z-10">
-        {magicWriter}
-        <span className="text-red-400 animate-blink">|</span>
-      </p>
-      <p className="text-8xl font-bold text-center text-red-600 absolute z-[-1] mt-1.5 mr-1.5">
-        {magicWriter}
-        <span className="text-red-600 animate-blink">|</span>
-      </p>
-      <p className="text-8xl font-bold text-center text-red-800 absolute z-[-2] mt-3 mr-3">
-        {magicWriter}
-        <span className="text-red-800 animate-blink">|</span>
-      </p>
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
 
-      <div className="h-60"></div>
-      <p className="text-4xl font-bold text-center">Welcome to my page!</p>
-    </div>
-  </main>
-  )
+  return (
+    <main className="flex flex-col items-center justify-center p-2">
+      <div className="flex flex-col min-h-screen items-center justify-center relative ">
+        <p className="text-8xl font-bold text-center text-red-400 absolute z-10">
+          {magicWriter}
+          <span className="text-red-400 animate-blink">|</span>
+        </p>
+        <p className="text-8xl font-bold text-center text-red-600 absolute z-[-1] mt-1.5 mr-1.5">
+          {magicWriter}
+          <span className="text-red-600 animate-blink">|</span>
+        </p>
+        <p className="text-8xl font-bold text-center text-red-800 absolute z-[-2] mt-3 mr-3">
+          {magicWriter}
+          <span className="text-red-800 animate-blink">|</span>
+        </p>
+  
+        <div className="h-60"></div>
+        <p className="text-4xl font-bold text-center">Welcome to my page!</p>
+      </div>
+    </main>
+    )
 }

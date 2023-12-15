@@ -41,7 +41,8 @@ export default function Home() {
         </p>
   
         <div className="h-60"></div>
-        <p className="text-4xl font-bold text-center">Welcome to my page!</p>
+        <p className="text-4xl text-yellow-400 font-bold text-center">🚧 Currently under development! 🚧</p>
+        {/* <p className="text-4xl font-bold text-center">Welcome to my page!</p> */}
       </div>
     </main>
     )

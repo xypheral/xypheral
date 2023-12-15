@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import useTypewriter from 'react-typewriter-hook';
+import RootLayout from '@/app/layout';
 
-export default function Home() {
-  const [text, setText] = useState('Xypheral');
+const Custom404 = () => {
+  const [text, setText] = useState('404 - Page Not Found');
   const magicWriter = useTypewriter(text);
 
   useEffect(() => {
-    if (magicWriter === 'Xypheral') {
+    if (magicWriter === '404 - Page Not Found') {
       setTimeout(() => {
         setText('');
       }, 2000);
     } else if (magicWriter === '') {
       setTimeout(() => {
-        setText('Xypheral');
+        setText('404 - Page Not Found');
       }, 2000);
     }
   }, [magicWriter]);
@@ -25,7 +26,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center justify-center p-2">
+    <RootLayout title="404 - Page Not Found">
       <div className="flex flex-col min-h-screen items-center justify-center relative ">
         <p className="text-8xl font-bold text-center text-red-400 absolute z-10">
           {magicWriter}
@@ -39,10 +40,9 @@ export default function Home() {
           {magicWriter}
           <span className="text-red-800 animate-blink">|</span>
         </p>
-  
-        <div className="h-60"></div>
-        <p className="text-4xl font-bold text-center">Welcome to my page!</p>
       </div>
-    </main>
-    )
+    </RootLayout>
+  );
 }
+
+export default Custom404;

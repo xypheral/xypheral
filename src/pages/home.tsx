@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-center">
-      <div className="flex flex-col min-h-screen items-center justify-center relative ">
+      <div className="flex flex-col h-screen items-center justify-center relative ">
         <p className="text-8xl font-bold text-center text-red-400 absolute z-10">
           {magicWriter}
           <span className="text-red-400 animate-blink">|</span>

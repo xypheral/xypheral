@@ -4,7 +4,7 @@ import Card from "@/components/Card"
 export default function About() {
   return (
     <RootLayout title="Xypheral | About">
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen"> 
         <h1 className="text-4xl text-red-400">About Me</h1>
       </div>
 
@@ -13,6 +13,15 @@ export default function About() {
           <div className="flex flex-col items-center justify-center h-full">
             <h1 className="text-2xl text-white">About</h1>
           </div>
+        </Card>
+      </div>
+
+      <div className="flex items-center justify-center h-screen bg-red-400">
+        <Card bannerImage="https://i.pinimg.com/736x/2f/59/e9/2f59e9a7782de37003a9683102e44557.jpg">
+        <div className="flex flex-col items-start justify-start h-full p-3">
+            <h1 className="text-2xl text-white ">Snoopy</h1>
+            <p className="text-white">snoopy desc</p>
+        </div>
         </Card>
       </div>
     </RootLayout>

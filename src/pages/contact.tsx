@@ -7,10 +7,6 @@ export default function Contact() {
       <div className="flex items-center justify-center h-screen">
         <h1 className="text-4xl text-red-400">Contact</h1>
       </div>
-
-      <div className="flex item-center justify-center h-screen">
-      <Colors/>
-      </div>
     </RootLayout>
   )
 }

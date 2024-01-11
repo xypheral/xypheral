@@ -1,6 +1,6 @@
 const Colors = () => {
     return (
-      <div className="flex flex-col items-center text-center justify-center">
+      <div className="flex flex-col items-center text-center justify-center mt-20 mb-20">
   
       {/* Slate */}
       <div className="flex mb-5">

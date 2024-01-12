@@ -6,7 +6,7 @@ export default function Shabi() {
         <div className="relative bg-black h-screen flex flex-col justify-between">
 
             <div className="absolute left-6 top-40 bottom-6 w-1 bg-cyan-400">
-                <p className="text-sm transform -rotate-90 absolute top-[-50px] left-[-29px] whitespace-nowrap text-cyan-400">Your Text</p>
+                <p className="text-sm transform -rotate-90 absolute top-[-55px] left-[-21px] whitespace-nowrap text-cyan-400">Design</p>
             </div>
 
             <div className="w-full h-24 mt-20 flex justify-between">
@@ -15,7 +15,7 @@ export default function Shabi() {
             </div>
 
             <div className="w-full h-100 mb-8 flex justify-between">
-                <p className="text-6xl ml-16 font-extrabold text-white">设计 <br /> DE DESIGN</p>
+                <p className="text-6xl ml-16 font-extrabold text-white translate-x-10">设计 <br /> DE DESIGN</p>
             </div>
 
             <div className="w-full h-100 mb-8 flex justify-between">
@@ -27,7 +27,7 @@ export default function Shabi() {
         <div className="relative h-screen bg-white flex flex-col justify-between">
 
             <div className="absolute left-6 top-40 bottom-6 w-1 bg-red-400">
-                <p className="text-sm transform -rotate-90 absolute top-[-50px] left-[-29px] whitespace-nowrap text-red-400">Your Text</p>
+                <p className="text-sm transform -rotate-90 absolute top-[-55px] left-[-21px] whitespace-nowrap text-red-400">Design</p>
             </div>
 
             <div className="w-full h-24 mt-20 flex justify-between">
@@ -36,7 +36,7 @@ export default function Shabi() {
             </div>
 
             <div className="w-full h-100 flex mb-8 justify-between">
-                <p className="text-6xl ml-16 font-extrabold text-black">设计 <br /> DE DESIGN</p>
+                <p className="text-6xl ml-16 font-extrabold text-black translate-x-10">设计 <br /> DE DESIGN</p>
             </div>
 
             <div className="w-full h-100 mb-8 flex justify-between">

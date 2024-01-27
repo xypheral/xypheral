@@ -1,10 +1,11 @@
-import RootLayout from "@/app/layout"
-import Card from "@/components/Card"
+import React from 'react'
+import Card from '@/components/Card'
 
-export default function About() {
+const About = () => {
   return (
-    <RootLayout title="Xypheral | About">
-      <div className="flex items-center justify-center h-screen"> 
+    <>
+    
+    <div className="flex items-center justify-center h-screen"> 
         <h1 className="text-4xl text-red-400">About Me</h1>
       </div>
 
@@ -24,6 +25,9 @@ export default function About() {
         </div>
         </Card>
       </div>
-    </RootLayout>
+
+    </>
   )
 }
+
+export default About

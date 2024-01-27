@@ -1,8 +1,8 @@
-import RootLayout from "@/app/layout"
+import React from 'react'
 
-export default function Projects() {
+const Projects = () => {
   return (
-    <RootLayout title="Xypheral | Projects"> {/* Set the title prop here */}
+    <>
       <div className="flex items-center justify-center h-screen">
         <h1 className="text-4xl text-red-400">My Projects</h1>
       </div>
@@ -14,6 +14,8 @@ export default function Projects() {
       <div className="flex items-center justify-center h-screen">
         <h1 className="text-4xl text-red-400">Page 3</h1>
       </div>
-    </RootLayout>
+    </>
   )
 }
+
+export default Projects

@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from 'react';
 import useTypewriter from 'react-typewriter-hook';
 
@@ -25,7 +26,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main>
       <div className="flex flex-col h-screen items-center justify-center relative ">
         <p className="text-8xl font-bold text-center text-red-400 absolute z-10">
           {magicWriter}
@@ -43,6 +44,7 @@ export default function Home() {
         <p className="text-4xl text-yellow-400 font-bold text-center">🚧 Currently under development! 🚧</p>
         {/* <p className="text-4xl font-bold text-center">Welcome to my page!</p> */}
       </div>
+
     </main>
-    )
+  );
 }

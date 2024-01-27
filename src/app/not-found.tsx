@@ -1,8 +1,8 @@
+"use client";
 import React, { useState, useEffect } from 'react';
 import useTypewriter from 'react-typewriter-hook';
-import RootLayout from '@/app/layout';
 
-const Custom404 = () => {
+const NotFound = () => {
   const [text, setText] = useState('404 - Page Not Found');
   const magicWriter = useTypewriter(text);
 
@@ -26,23 +26,23 @@ const Custom404 = () => {
   }, []);
 
   return (
-    <RootLayout title="404 - Page Not Found">
-      <div className="flex flex-col min-h-screen items-center justify-center relative ">
+    
+    <div className="flex flex-col min-h-screen items-center justify-center relative ">
         <p className="text-8xl font-bold text-center text-red-400 absolute z-10">
-          {magicWriter}
-          <span className="text-red-400 animate-blink">|</span>
+            {magicWriter}
+            <span className="text-red-400 animate-blink">|</span>
         </p>
         <p className="text-8xl font-bold text-center text-red-600 absolute z-[-1] mt-1.5 mr-1.5">
-          {magicWriter}
-          <span className="text-red-600 animate-blink">|</span>
+            {magicWriter}
+            <span className="text-red-600 animate-blink">|</span>
         </p>
         <p className="text-8xl font-bold text-center text-red-800 absolute z-[-2] mt-3 mr-3">
-          {magicWriter}
-          <span className="text-red-800 animate-blink">|</span>
+            {magicWriter}
+            <span className="text-red-800 animate-blink">|</span>
         </p>
-      </div>
-    </RootLayout>
-  );
+    </div>
+
+  )
 }
 
-export default Custom404;
+export default NotFound
